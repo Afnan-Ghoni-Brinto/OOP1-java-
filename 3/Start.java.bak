@@ -1,0 +1,31 @@
+public class Start{
+    public static void main(String[] args){
+		System.out.println("\n\n      WELCOME TO OUR LIBRARY\n\n");
+		System.out.println("\n             STORY BOOK");
+		StoryBook b=new StoryBook("990-12312-02","POINT OF RETRITE","KULIN HOBER",250,5,"ROMANCE");
+		b.setDiscountRate(20);
+		b.addQuantity(3);
+		b.sellQuantity(1);
+		b.showDetails();
+		
+		System.out.println("\n\n         ANOTHER OBJECT\n");
+		StoryBook c=new StoryBook("29-90992-4","PET SEMETARY","STEBEN KING",500,2,"HORROR");
+		c.setDiscountRate(50);
+		c.addQuantity(2);
+		c.sellQuantity(2);
+		c.showDetails();
+		
+		System.out.println("\n              TEXT BOOK");
+		TextBook x=new TextBook("12-3456-789","PHYSICS VOL 1","DAVID HALLIDAY",800,1,1);
+		x.setDiscountRate(10);
+		x.addQuantity(6);
+		x.sellQuantity(6);
+		x.showDetails(); 
+		System.out.println("\n               NEXT");
+		TextBook y=new TextBook("12-3456-789","PHYSICS VOL 2","DAVID HALLIDAY",850,10,1);
+		y.setDiscountRate(10);
+		y.addQuantity(8);
+		y.sellQuantity(15);
+		y.showDetails();
+	}
+}

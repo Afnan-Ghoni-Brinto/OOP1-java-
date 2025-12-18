@@ -1,0 +1,76 @@
+public class StoryBook{
+	String isbn,bookTitle,authorName;
+	double price ;
+	int availableQuantity;
+	String category;
+	public static double discountRate;
+public StoryBook(){
+	System.out.println("Emty");
+}
+public StoryBook(String isbn,String bookTitle ,String authorName,double price,int availableQuantity,String category){
+	this.isbn=isbn;
+	this.bookTitle=bookTitle;
+	this.authorName=authorName;
+	this.price=price;
+	this.availableQuantity=availableQuantity;
+	this.category=category;
+}
+public static void setDiscountRate(double rate){
+	discountRate=rate;
+}
+public static double getDiscountRate(){
+	return discountRate;
+}
+public void setIsbn(String isbn){
+	this.isbn=isbn;
+}
+public void setBookTitle(String bookTitle){
+	this.bookTitle=bookTitle;
+}
+public void setAurthorName(String authorName){
+	this.authorName=authorName;
+}
+public void setPrise(double price){
+    this.price=price;
+}
+public void setAvaiableQuantity(int availableQuantity){
+	this.availableQuantity=availableQuantity;
+}
+public void setCategory(String category){
+	this.category=category;
+}
+public String getIsbn(){
+	return isbn;
+}
+public String getBookTitle(){
+	return bookTitle;
+}
+public String getAurthorName(){
+	return authorName;
+}
+public double getPrise(){
+    return price;
+}
+public int getAvaiableQuantity(){
+	return availableQuantity;
+}
+public String getCategory(){
+    return category;	
+}
+public void addQuantity(int amount){
+		availableQuantity=availableQuantity+amount;
+}
+public void sellQuantity(int amount){
+	    availableQuantity=availableQuantity-amount;
+}	
+	public void showDetails()
+	{
+		System.out.println("ISBN                ->"+isbn);
+		System.out.println("BOOK TITLE          ->"+bookTitle);
+		System.out.println("AUTHOR NAME         ->"+authorName);
+		price=price-(price*(discountRate/100));
+		System.out.println("AFTER DISCOUNT PRICE->"+price);
+		System.out.println("AVAILABLE           ->"+availableQuantity);
+		System.out.println("GENER               ->"+category);
+	}
+}
