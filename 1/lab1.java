@@ -1,0 +1,16 @@
+public class lab1{
+	public static void main(String[] args){
+		Student ce=new Student();
+		System.out.println("STUDENT INFORMATION");
+		ce.setID("24-60363-3");
+		ce.setName("afnan-ghoni-brinto");
+		ce.setCgpa(3.9);
+		ce.ShowInfo();
+		System.out.println("\n\nACCOUNT DETAILS ");
+		Account cee=new Account();
+		cee.setAccountNumber(30011);
+		cee.setAccountHolderName("afnan-ghoni-brinto");
+		cee.setBalance(7000);
+		cee.ShowDetails();
+	}
+}
